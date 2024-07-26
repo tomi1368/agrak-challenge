@@ -6,9 +6,9 @@ import { useNavigate } from "react-router-dom";
 const Component = () => {
   const navigate = useNavigate();
   return (
-    <FlexContainer justify="flex-start">
+    <FlexContainer $justify="flex-start">
       <Button
-        options={{
+        $options={{
           size: "sm",
           skin: "primary",
           type: "filled",

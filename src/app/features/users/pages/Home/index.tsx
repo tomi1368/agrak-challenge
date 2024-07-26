@@ -39,9 +39,9 @@ const Component = () => {
         <Loader />
       ) : (
         <>
-          <FlexContainer justify="center" style={{ marginBottom: "10px" }}>
+          <FlexContainer $justify="center" style={{ marginBottom: "10px" }}>
             <Button
-              options={{ size: "md", skin: "gray", type: "filled" }}
+              $options={{ size: "md", skin: "gray", type: "filled" }}
               onClick={handleAddUser}
             >
               Create User

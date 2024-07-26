@@ -125,7 +125,7 @@ const Component = ({ user }: { user?: UserDto }) => {
               error={errors["email"]}
               marginbottom={10}
             />
-            {avatarPreview && <Avatar src={avatarPreview}></Avatar>}
+            {avatarPreview && <Avatar $src={avatarPreview}></Avatar>}
 
             <FileInput
               label="Avatar"
@@ -145,7 +145,7 @@ const Component = ({ user }: { user?: UserDto }) => {
               onBlur={handleBlur}
             ></FileInput>
             <Button
-              options={{
+              $options={{
                 type: "filled",
                 skin: "gray",
                 size: "lg",
@@ -157,7 +157,7 @@ const Component = ({ user }: { user?: UserDto }) => {
               Cancel
             </Button>
             <Button
-              options={{
+              $options={{
                 type: "filled",
                 skin: "primary",
                 size: "lg",
@@ -169,7 +169,7 @@ const Component = ({ user }: { user?: UserDto }) => {
             </Button>
             {user && (
               <Button
-                options={{
+                $options={{
                   type: "filled",
                   skin: "danger",
                   size: "lg",

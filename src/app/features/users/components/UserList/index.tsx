@@ -2,7 +2,7 @@ import { UserListContainer, UserItem, UserInfo, UserActions } from "./style";
 import { UserDto } from "../../../../shared/types/user.interface";
 import Button from "../../../../shared/components/Button";
 import { FlexContainer } from "../../../../shared/styles/containers/style";
-import { Avatar } from "../../../../shared/components/Avatar/style";
+import Avatar from "../../../../shared/components/Avatar";
 
 interface Props {
   users?: UserDto[];
@@ -16,8 +16,8 @@ const Component = ({ users, onEdit, onDelete, isLoading }: Props) => {
     <UserListContainer>
       {users?.map((user) => (
         <UserItem key={user.id}>
-          <FlexContainer align="center" gap="10px">
-            <Avatar src={user.avatar}></Avatar>
+          <FlexContainer $align="center" $gap="10px">
+            <Avatar $src={user.avatar}></Avatar>
             <UserInfo>
               <span>
                 {user.first_name} {user.second_name}
@@ -28,13 +28,13 @@ const Component = ({ users, onEdit, onDelete, isLoading }: Props) => {
 
           <UserActions>
             <Button
-              options={{ size: "sm", skin: "primary", type: "filled" }}
+              $options={{ size: "sm", skin: "primary", type: "filled" }}
               onClick={() => onEdit(user.id)}
             >
               Edit
             </Button>
             <Button
-              options={{ size: "sm", skin: "danger", type: "filled" }}
+              $options={{ size: "sm", skin: "danger", type: "filled" }}
               onClick={() => onDelete(user.id)}
               disabled={isLoading(user)}
             >

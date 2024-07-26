@@ -5,7 +5,7 @@ interface ButtonProps {
   children: any;
   disabled?: boolean;
   onClick?: (ev: any) => void;
-  options: {
+  $options: {
     size: "sm" | "md" | "lg";
     type: "filled";
     skin: "primary" | "gray" | "danger";

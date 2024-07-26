@@ -14,9 +14,9 @@ interface Props {
 
 const Component = ({ error, marginbottom, label, ...rest }: Props) => {
   return (
-    <FlexContainer direction="column" align="flex-start">
+    <FlexContainer $direction="column" $align="flex-start">
       <Label>{label}</Label>
-      <FieldContainer marginbottom={marginbottom}>
+      <FieldContainer $marginbottom={marginbottom}>
         <Input {...rest} />
       </FieldContainer>
       {!!error && <ErrorMessage>{error}</ErrorMessage>}

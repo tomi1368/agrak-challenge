@@ -37,12 +37,12 @@ interface OptionsType {
 }
 
 export const Button = styled("button")<{
-  options: OptionsType;
+  $options: OptionsType;
   disabled?: boolean;
 }>`
   ${(props) => {
-    const { options, theme, disabled } = props;
-    const { size, type, skin, marginbottom, block } = options;
+    const { $options, theme, disabled } = props;
+    const { size, type, skin, marginbottom, block } = $options;
     return `
       font-family: 'Inter',sans-serif;
       cursor: pointer;

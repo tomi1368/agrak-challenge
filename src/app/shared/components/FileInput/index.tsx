@@ -41,9 +41,9 @@ const Component = ({
   };
   const isFile = value instanceof File;
   return (
-    <FlexContainer align="flex-start" direction="column">
+    <FlexContainer $align="flex-start" $direction="column">
       <Label>{label}</Label>
-      <FieldContainer marginbottom={marginbottom}>
+      <FieldContainer $marginbottom={marginbottom}>
         {!!isFile && (
           <ClearInput
             style={{ marginLeft: "10px" }}
