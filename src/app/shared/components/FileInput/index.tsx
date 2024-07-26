@@ -1,7 +1,11 @@
 import React, { createRef, useState } from "react";
 import { ErrorMessage } from "../../styles/global/style";
-import { FieldContainer } from "../Input/style";
-import { ClearInput, Input, Label } from "../../styles/form/style";
+import {
+  ClearInput,
+  FieldContainer,
+  Input,
+  Label,
+} from "../../styles/form/style";
 import { FlexContainer } from "../../styles/containers/style";
 
 interface Props {

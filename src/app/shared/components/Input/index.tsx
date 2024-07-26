@@ -1,7 +1,6 @@
 import { FlexContainer } from "../../styles/containers/style";
-import { Input, Label } from "../../styles/form/style";
+import { FieldContainer, Input, Label } from "../../styles/form/style";
 import { ErrorMessage } from "../../styles/global/style";
-import { FieldContainer } from "./style";
 
 interface Props {
   value: string;
